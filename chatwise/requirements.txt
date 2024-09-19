@@ -1,0 +1,5 @@
+slack
+cohere
+chromadb
+langchain
+langchain_community
