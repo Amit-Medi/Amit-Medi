@@ -4,12 +4,14 @@ from slack_sdk import WebClient
 from datetime import datetime, timedelta
 import cohere
 import re
+import os
+from dotenv import load_dotenv
 
 # from sympy import collect
 # from transformers.models.pop2piano.convert_pop2piano_weights_to_hf import model
-
+load_dotenv()
 co = cohere.Client('9GNgX78w1JrrgHkqXe5YebstVdTMrbwejFlSNhaC')  # Replace with your actual API key
-slack_token = "xoxp-7675160877186-7697994920736-7752358192741-3c4fe2a7cf164513eaff7cb3396e0e19"
+slack_token = os.getenv('OAUTH_SLACK_TOKEN')
 slack_channel = "C07KNFH0HD4"
 slack_client = WebClient(token=slack_token)
 
@@ -137,6 +139,5 @@ def message_handler():
             # Write to the client ChatWise
     else:
         return ""# await say("No messages found in the specified channel during the given time period.")
-
 
 message_handler()
