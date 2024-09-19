@@ -1,4 +1,6 @@
 slack
+slack_sdk
+load_dotenv
 cohere
 chromadb
 langchain
