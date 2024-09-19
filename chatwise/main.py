@@ -9,7 +9,7 @@ import re
 # from transformers.models.pop2piano.convert_pop2piano_weights_to_hf import model
 
 co = cohere.Client('9GNgX78w1JrrgHkqXe5YebstVdTMrbwejFlSNhaC')  # Replace with your actual API key
-slack_token = "xoxb-7675160877186-7742108123686-XesnSgFX02dzwYVJ8MJjLkhr"
+slack_token = "xoxp-7675160877186-7697994920736-7752358192741-3c4fe2a7cf164513eaff7cb3396e0e19"
 slack_channel = "C07KNFH0HD4"
 slack_client = WebClient(token=slack_token)
 
